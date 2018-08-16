@@ -57,8 +57,7 @@ function gallery3() {
 }
 
 $(document).ready(function () {
-
-    startCycle();
+    var cycle;
 
     function cycleFunction() {
         gallery1();
@@ -67,14 +66,15 @@ $(document).ready(function () {
     }
 
 
-
     function stopCycle() {
         window.clearInterval(cycle);
+        interval = null;
     }
 
     function startCycle() {
-        stopCycle();
-        cycle = setInterval(cycleFunction, 13000);
+        if (!cycle) {
+            cycle = setInterval(cycleFunction, 13000);
+        }
     }
     window.addEventListener('focus', startCycle);
     window.addEventListener('blur', stopCycle);
