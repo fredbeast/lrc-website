@@ -66,13 +66,15 @@ $(document).ready(function () {
         setTimeout(gallery3, 2600);
     }
 
-    function startCycle() {
-        stopCycle();
-        cycle = setInterval(cycleFunction, 13000);
-    }
+
 
     function stopCycle() {
         window.clearInterval(cycle);
+    }
+
+    function startCycle() {
+        stopCycle();
+        cycle = setInterval(cycleFunction, 13000);
     }
     window.addEventListener('focus', startCycle);
     window.addEventListener('blur', stopCycle);
