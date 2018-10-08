@@ -70,7 +70,7 @@ h6 {
 }
 
 p {
-    color: #2b325d;
+    color: #6c757d;
 }
 
 h1 {
@@ -362,22 +362,23 @@ p .lead {
 }
 
 hr.tl {
+    margin-left: -15%;
     border-top: 1px solid #000;
     float: left;
 }
 
 .tl-t {
-    width: 50%;
+    width: 60%;
 }
 
 .tl-b {
-    width: 25%;
+    width: 35%;
 }
 
 .title {
     padding-top: 20px;
-    margin-top: 1em;
-    margin-bottom: 0.8em;
+    margin-top: 1.1em;
+    margin-bottom: 0.9em;
 }
 
 #hero img {
@@ -433,7 +434,56 @@ hr.tl {
 
 .trio-text {
     text-align: justify;
-    font-size: 0.8em;
+}
+
+.text-story {
+    color: #6c757d !important;
+}
+
+.circles {
+    width: 100%;
+    padding: 10px;
+    opacity: 0.8;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+
+    .circles {
+        width: 70%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .circles {
+        width: 50%;
+    }
+
+}
+
+.service p {
+    font-size: 12px;
+}
+
+.service .col-md-6 {
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #2b325d;
+}
+
+.btn-link {
+    color: #fbfbfb;
+    text-decoration: none;
+}
+
+.btn-link:hover,
+.btn-link:active,
+.btn-link:focus {
+    color: #ffc107;
+    text-decoration: none;
 }
 
 .gallery {

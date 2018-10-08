@@ -73,7 +73,7 @@ $(document).ready(function () {
 
     function startCycle() {
         if (!cycle) {
-            cycle = setInterval(cycleFunction, 13000);
+            cycle = setInterval(cycleFunction, 6000);
         }
     }
     window.addEventListener('focus', startCycle);
@@ -102,9 +102,7 @@ g3.push(["boroughs/borough-3.jpg", "HAMMERSMITH<br>& FULHAM"]);
 g3.push(["boroughs/borough-6.jpg", "CAMDEN"]);
 
 
-
 $('li a').click(function (e) {
-    e.preventDefault();
     $('a').removeClass('active');
     $(this).addClass('active');
 });
