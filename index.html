@@ -38,6 +38,9 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/custom.css">
 
+    <!-- Animate -->
+
+    <link rel="stylesheet" href="styles/animate.css">
 
 </head>
 
@@ -70,6 +73,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="#hero">HOME<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#story">OUR STORY</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#service">OUR SERVICE</a>
@@ -175,6 +181,14 @@
             </div>
 
         </div>
+        <a class="carousel-control-prev" href="#hero" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#hero" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
 
     <!-- TRIO -->
@@ -191,22 +205,29 @@
             </div>
         </div>
     </section>
-
-    <section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <hr class="tl tl-b">
+                <hr class="tl tl-b tl-r">
+            </div>
+        </div>
+    </div>
+    <section style="padding-bottom:0">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center">
-                    <img class="trio mx-auto" src="images/test.png">
+                    <img class="trio mx-auto" src="images/test-5.png">
                     <h4>Tailored Service</h4>
                     <p class="trio-text">To us, true customer service means treating each of our clients individually, that’s why we get to know you and your home really well and design a short-term rental plan to suit you.</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <img class="trio mx-auto d-block" src="images/test.png">
+                    <img class="trio mx-auto d-block" src="images/test-5.png">
                     <h4>Total Flexibility</h4>
                     <p class="trio-text">Let your property whenever you like, for however long is needed safe in the knowledge that it is being lovingly cared for ready for your return home</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <img class="trio mx-auto d-block" src="images/test.png">
+                    <img class="trio mx-auto d-block" src="images/test-5.png">
                     <h4>Hospitality</h4>
                     <p class="trio-text">From professional photographs, marketing online and vetting guests to managing your home, maintenance and housekeeping (fresh towels & linen), we’ve got you covered. Don’t take our word for it - see for <a href="https://thelondonresidentsclub.guestybookings.com/">yourself</a></p>
                 </div>
@@ -214,6 +235,23 @@
             </div>
         </div>
     </section>
+
+
+    <!-- BROCHURE -->
+
+    <section id="story">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <button type="button" class="btn btn-navy btn-brochure">
+                        <a href="https://www.google.com/url?q=https://drive.google.com/open?id%3D134opacdHglV_lEnvkLtWBR2F2ZD8C1tQ&sa=D&ust=1539073305118000&usg=AFQjCNFRzFR-ZPTT4vbfOeBdmUDrGW5VCw" target="_blank">OUR BROCHURE</a>
+                    </button>
+                    <img src="images/brochure.jpg" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- APPLY -->
 
@@ -234,9 +272,9 @@
         </div>
     </section>
 
-    <!-- OUR STORY -->
+    <!-- STORY -->
 
-    <section>
+    <section id="story">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -257,6 +295,7 @@
                         <br>
                         <br> We turned our gaze to the London property market - we met with agents, developers, industry experts, contractors and potential clients. From our research, it was clear that property management and specifically short let management was a nascent market brimming with opportunity. We set out with one simple task: to create the best short let management company in London. Three years later that is still our aim and we believe we’re not far off achieving that goal. We’re constantly innovating and seeking improvement and we will never rest on our laurels.
                     </h5>
+                    <img src="images/signature.png" width="250px" style="padding:20px; opacity: 0.7">
                 </div>
                 <div class="col-md-5 d-none d-md-block">
                     <div class="row ">
@@ -293,10 +332,10 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-3">
-                            <img src="images/logo.svg" class="d-inline-block" width="100px">
+                        <div class="col-1 text-right">
+                            <img src="images/service/service-1.png" width="30px">
                         </div>
-                        <div class="col-9">
+                        <div class="col-9 offset-1">
                             <h4>Photography</h4>
                             <p>Our professional interiors photographer will take stunning photographs of your home to best present it across our online platforms</p>
                         </div>
@@ -305,10 +344,10 @@
 
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-3">
-                            <img src="images/logo.svg" class="d-inline-block" width="100px">
+                        <div class="col-1 text-right">
+                            <img src="images/service/service-1.png" width="30px">
                         </div>
-                        <div class="col-9">
+                        <div class="col-9 offset-1">
                             <h4>Marketing</h4>
                             <p>Bespoke listing creating, with detailed descriptions of the property and surrounding areas (including your recommendations) and promotion across all channels</p>
                         </div>
@@ -318,10 +357,10 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-3">
-                            <img src="images/logo.svg" class="d-inline-block" width="100px">
+                        <div class="col-1 text-right">
+                            <img src="images/service/service-1.png" width="30px">
                         </div>
-                        <div class="col-9">
+                        <div class="col-9 offset-1">
                             <h4>Reservations & Pricing</h4>
                             <p>We adopt a dynamic pricing strategy led by your requirements, market data and local events. We use sophisticated software and tools in order to manage your listing calendar and bookings
                             </p>
@@ -331,10 +370,10 @@
 
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-3">
-                            <img src="images/logo.svg" class="d-inline-block" width="100px">
+                        <div class="col-1 text-right">
+                            <img src="images/service/service-1.png" width="30px">
                         </div>
-                        <div class="col-9">
+                        <div class="col-9 offset-1">
                             <h4>Guest Vetting & Deposits
                             </h4>
                             <p>Only verified, well-reviewed guests get to stay at your home and our greeters are well trained to inform the guests of our house rules. Security deposits are also taken for peace of mind.
@@ -346,10 +385,10 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-3">
-                            <img src="images/logo.svg" class="d-inline-block" width="100px">
+                        <div class="col-1 text-right">
+                            <img src="images/service/service-1.png" width="30px">
                         </div>
-                        <div class="col-9">
+                        <div class="col-9 offset-1">
                             <h4>In Person Check-In</h4>
                             <p>An in person check-in serves two purposes. It is the final stage of the vetting process and it provides a friendly introduction and tour for the guest - our greeters are trained to know the area and to be able to provide recommendations. Our Premium Members also benefit from a photo inventory and in-person check-out
                             </p>
@@ -359,10 +398,10 @@
 
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-3">
-                            <img src="images/logo.svg" class="d-inline-block" width="100px">
+                        <div class="col-1 text-right">
+                            <img src="images/service/service-1.png" width="30px">
                         </div>
-                        <div class="col-9">
+                        <div class="col-9 offset-1">
                             <h4>Housekeeping</h4>
                             <p>Our team of housekeepers clean before and after each booking to your exact requirements. Do like you linen stored in a certain place? No problem. Need special brass ornaments polished? Just let us know
                             </p>
@@ -373,10 +412,10 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-3">
-                            <img src="images/logo.svg" class="d-inline-block" width="100px">
+                        <div class="col-1 text-right">
+                            <img src="images/service/service-1.png" width="30px">
                         </div>
-                        <div class="col-9">
+                        <div class="col-9 offset-1">
                             <h4>Linens</h4>
                             <p>Fluffy white towels, high-quality cotton linens and complimentary toiletries for all of our guests
                             </p>
@@ -385,10 +424,10 @@
                 </div>
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-3">
-                            <img src="images/logo.svg" class="d-inline-block" width="100px">
+                        <div class="col-1 text-right">
+                            <img src="images/service/service-1.png" width="30px">
                         </div>
-                        <div class="col-9">
+                        <div class="col-9 offset-1">
                             <h4>Maintenance</h4>
                             <p>Our full-time maintenance team are on hand to sort out all manner of guest-related issues or facilitate works and projects outside of booking periods
 
@@ -400,10 +439,10 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-3">
-                            <img src="images/logo.svg" class="d-inline-block" width="100px">
+                        <div class="col-1 text-right">
+                            <img src="images/service/service-1.png" width="30px">
                         </div>
-                        <div class="col-9">
+                        <div class="col-9 offset-1">
                             <h4>24/7 Support
                             </h4>
                             <p>Our friendly team are on hand 24/7 for both Members and Guests and speak a range of European languages
@@ -470,10 +509,11 @@
                                         </li>
                                         <li>A selective, high-end portfolio of properties, ensuring that the quality of our service is never compromised.
                                         </li>
-                                        <li>Optimised listings and pricing: high-quality professional photos, a host client account with top guest reviews, and pricing based on seasonality, demand and events in the local area. Our pricing is clear and transparent, working with each client to decide on nightly rates and have a set commission % fee.
+                                        <li>Our pricing is clear and transparent. We charge a set % of rental income which is clearly itemised in your monthly remittance.
                                         </li>
                                         <li>Flexibility! Owners can choose to review each guest booking enquiry before accepting a booking; can stay in their own property at whatever time the property is not booked throughout the year; and can select their own guest criteria (no kids/pets/students etc). We can adhere to any specific instructions on housekeeping and any other preparations.
                                         </li>
+                                        <li>Dedicated client account manager</li>
                                         <li>We put significant emphasis and investment into our operational processes e.g. our check-in greeters not only provide a great introduction for the guests but report back to HQ on everything which needs replacing, guest special requests, maintenance issues and any concerns about the guests who have arrived. We have a large team of operations and maintenance professionals ready to deal with these issues.
                                         </li>
                                     </ul>
@@ -590,6 +630,8 @@
                                 <div class="card-body">
                                     <li>Our Premium Members benefit from complimentary insurance.
                                     </li>
+                                    <li>We encourage our Standard Members to take up short-rental, on-demand, pay by the stay insurance through GUARDHOG. The costs vary depending on the host and the property but start from as little as £2 per night as long as you are using The London Residents Club. For more information please email Humphrey@guardhog.com or look at their website www.guardhog.com
+                                    </li>
                                 </div>
                             </div>
                         </div>
@@ -609,14 +651,14 @@
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-header" id="headingEight">
+                            <div class="card-header" id="headingTen">
                                 <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
                                         Will I have a dedicated account manager?
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#faqExample">
+                            <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#faqExample">
                                 <div class="card-body">
                                     <li>Yes
                                     </li>
@@ -833,14 +875,14 @@
     </section>
 
     <section>
-        <div class="container">
+        <div class="container-fluid">
             <div id="test-carousel" class="carousel slide carousel-fade" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <img class="d-block w-100" src="images/test-1.png" alt="Second slide">
+                                    <img class="d-block w-100" src="images/test-1.png" alt="First Testimonial">
                                 </div>
                                 <div class="col-md-7 offset-md-1 align-self-center">
                                     <h4>
@@ -857,7 +899,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <img class=" d-block w-100" src="images/test-2.png" alt="Second slide">
+                                    <img class=" d-block w-100" src="images/test-1.png" alt="Second Testimonial">
                                 </div>
                                 <div class="col-md-7 offset-md-1 align-self-center">
                                     <h4>
@@ -874,7 +916,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <img class="d-block w-100" src="images/test-1.png" alt="Second slide">
+                                    <img class="d-block w-100" src="images/test-1.png" alt="Third Testimonial">
                                 </div>
                                 <div class="col-md-7 offset-md-1 align-self-center">
                                     <h5>
@@ -905,8 +947,15 @@
                         </div>
                     </div>
                 </div>
+                <a class="carousel-control-prev" href="#test-carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#test-carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-
         </div>
     </section>
 
@@ -962,7 +1011,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <iframe class="map" width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJNZfrHhMFdkgRuAGR-vrqsi0&key=AIzaSyC4kH21kP97O4thADhPnPelxzNMz2EcQXc" allowfullscreen></iframe>
+                    <iframe class="map" width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJNZfrHhMFdkgRuAGR-vrqsi0&key=AIzaSyC4kH21kP97O4thADhPnPelxzNMz2EcQXc&zoom=17" allowfullscreen></iframe>
 
                 </div>
             </div>
@@ -987,43 +1036,43 @@
         <div class="container">
             <div class="row ">
                 <div class="col-sm-4 text-center">
-                    <img src="images/partners/partner-1.jpg" class="partner d-inline-block" height="150px">
+                    <img src="images/partners/partner-1.jpg" class="partner d-inline-block" width="100%">
                     <p>Thames Rockets</p>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <img src="images/partners/partner-2.jpg" class="partner d-inline-block" height="150px">
+                    <img src="images/partners/partner-2.jpg" class="partner d-inline-block" width="100%">
                     <p>Little Blue Door</p>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <img src="images/partners/partner-3.jpg" class="partner d-inline-block" height="150px">
+                    <img src="images/partners/partner-3.jpg" class="partner d-inline-block" width="100%">
                     <p>Babysitters Of</p>
                 </div>
             </div>
             <div class="row ">
                 <div class="col-sm-4 text-center">
-                    <img src="images/partners/partner-4.jpg" class="partner d-inline-block" height="150px">
+                    <img src="images/partners/partner-4.jpg" class="partner d-inline-block" width="100%">
                     <p>Friends of Friends London</p>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <img src="images/partners/partner-5.jpg" class="partner d-inline-block" height="150px">
+                    <img src="images/partners/partner-5.jpg" class="partner d-inline-block" width="100%">
                     <p>Rentuu.com</p>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <img src="images/partners/partner-6.jpg" class="partner d-inline-block" height="150px">
+                    <img src="images/partners/partner-6.jpg" class="partner d-inline-block" width="100%">
                     <p>The Plum Guide</p>
                 </div>
             </div>
             <div class="row ">
                 <div class="col-sm-4 text-center">
-                    <img src="images/partners/partner-7.jpg" class="partner d-inline-block" height="150px">
+                    <img src="images/partners/partner-7.jpg" class="partner d-inline-block" width="100%">
                     <p>Guard Hog</p>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <img src="images/partners/partner-8.jpg" class="partner d-inline-block" height="150px">
+                    <img src="images/partners/partner-8.jpg" class="partner d-inline-block" width="100%">
                     <p>24/7 Airport Transfer</p>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <img src="images/partners/partner-9.jpg" class="partner d-inline-block" height="150px">
+                    <img src="images/partners/partner-9.jpg" class="partner d-inline-block" width="100%">
                     <p>Airtots</p>
                 </div>
             </div>
@@ -1066,6 +1115,7 @@
         window.jQuery || document.write('<script src="scripts/jquery-3.3.1.min.js"><\/script>')
 
     </script>
+    <script type="text/javascript" src="scripts/wow.min.js"></script>
     <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
     <script type="text/javascript" src="scripts/popper.min.js"></script>
     <script type="text/javascript" src="scripts/custom.js"></script>
