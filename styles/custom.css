@@ -457,10 +457,22 @@ hr.tl.tl-r {
     font-weight: 700;
 }
 
+@media screen and (max-width: 768px) {
+    .carousel-cover h2 {
+        font-size: 1.8rem;
+    }
+}
+
 .carousel-cover p {
     font-size: 1.2em;
     margin-bottom: 0;
     color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-cover p {
+        font-size: 1em;
+    }
 }
 
 .carousel-cover hr {
@@ -477,14 +489,14 @@ hr.tl.tl-r {
 
 }
 
-.carousel-item img {
+#hero .carousel-item img {
     max-height: 850px;
     min-width: auto;
 }
 
 @media screen and (max-width: 768px) {
 
-    .carousel-item img {
+    #hero .carousel-item img {
         height: 374px;
         width: 880px !important;
         margin-left: calc(50% - 440px);
@@ -494,7 +506,7 @@ hr.tl.tl-r {
 
 @media screen and (min-width: 413px) and (max-width: 768px) {
 
-    .carousel-item img {
+    #hero .carousel-item img {
         height: 374px;
         width: 880px !important;
         margin-left: calc(50% - 440px);
@@ -504,7 +516,7 @@ hr.tl.tl-r {
 
 @media screen and (min-width: 375px) and (max-width: 412px) {
 
-    .carousel-item img {
+    #hero .carousel-item img {
         height: 272px;
         width: 640px !important;
         margin-left: calc(50% - 320px);
@@ -514,7 +526,7 @@ hr.tl.tl-r {
 
 @media screen and (max-width: 374px) {
 
-    .carousel-item img {
+    #hero .carousel-item img {
         height: 224.4px;
         width: 480px !important;
         margin-left: calc(50% - 240px);
@@ -747,6 +759,7 @@ hr.tl.tl-r {
 
 #houses-drawing {
     width: 100%;
+    margin-bottom: 40px;
 }
 
 @media screen and (min-width: 1200px) {
