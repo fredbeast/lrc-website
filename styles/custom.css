@@ -110,8 +110,9 @@ section#story {
 @media screen and (max-width: 1024px) {}
 
 
-p .lead {
+p.lead {
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
 }
 
 .loader {
@@ -837,5 +838,6 @@ hr.tl.tl-r {
 
     .partner {
         height: 75px;
+        width: auto
     }
 }
