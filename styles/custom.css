@@ -62,7 +62,7 @@
 }
 
 body {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -439,7 +439,7 @@ hr.tl.tl-r {
 }
 
 #hero img {
-    max-height: 550px;
+    max-height: 850px;
     min-width: auto;
 }
 
