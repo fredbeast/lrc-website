@@ -62,11 +62,11 @@
             <img src="images/logo.svg" width="45" height="45" class="d-inline-block" id="logo" alt="">
             <span>L R C </span>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapseButton" aria-controls="navbarCollapseButton" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarsExample03">
+        <div class="collapse navbar-collapse" id="navbarCollapseButton">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link book-btn" target="_blank" href="https://thelondonresidentsclub.guestybookings.com/">BOOK</a>
@@ -163,6 +163,16 @@
     <!-- HERO -->
 
     <div id="hero" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-cover ">
+            <p>WELCOME TO</p>
+            <h2>The London Residents Club</h2>
+            <hr>
+        </div>
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="images/hero/1.jpg" alt="First slide">
@@ -204,9 +214,10 @@
         </div>
     </section>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-12 text-center">
+            <div class="col-12 text-center" style="   white-space: nowrap;
+    overflow: hidden;">
                 <h4>London Property Owners</h4>
                 <p style="margin-bottom:0.6rem">&</p>
                 <h4>Visiting Guests</h4>
@@ -235,7 +246,7 @@
                 <div class="col-md-4 text-center">
                     <img class="trio mx-auto d-block" src="images/test-5.png">
                     <h4>Hospitality</h4>
-                    <p class="trio-text">From professional photographs, marketing online and vetting guests to managing your home, maintenance and housekeeping (fresh towels & linen), we’ve got you covered. Don’t take our word for it - see for <a href="https://thelondonresidentsclub.guestybookings.com/">yourself</a></p>
+                    <p class="trio-text">From professional photographs, marketing online and vetting guests to managing your home, maintenance and housekeeping (fresh towels & linen), we’ve got you covered. Don’t take our word for it - see for <a href="#service">yourself</a></p>
                 </div>
 
             </div>
@@ -266,10 +277,10 @@
                     <img class="mx-auto w-100" id="houses-drawing" src="images/houses.png">
                 </div>
                 <div class="col-md-5 justify-content-center align-self-center">
-                    <h2>Interested?</h2>
-                    <h2>Find out how much you could <button type="button" class="btn btn-value"><a class="typeform-share link" href="https://thelondonresidentsclub.typeform.com/to/CyJFRj" data-mode="popup" style="color:#232D5E;text-decoration:underline;font-size:20px;" data-submit-close-delay="5" target="_blank"> EARN </a>
+                    <h4>Interested?</h4>
+                    <h4>Find out how much you could <button type="button" class="btn btn-value"><a class="typeform-share link" href="https://thelondonresidentsclub.typeform.com/to/CyJFRj" data-mode="popup" style="color:#232D5E;text-decoration:underline;font-size:20px;" data-submit-close-delay="5" target="_blank"> EARN </a>
                             <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-                        </button></h2>
+                        </button></h4>
                     <p class="text-muted">Whether you want to monetise your family home while you’re away, an investor or a pied-a-terre owner seeking a year-round attractive yield, we will be happy to call you to discuss our rental estimates and our service in more detail.
                     </p>
                 </div>
@@ -644,7 +655,7 @@
                             <div class="card-header" id="headingNine">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                                        Will I still have access to my property/Can I block days out in my calendar?
+                                        Can I use my home?
                                     </button>
                                 </h5>
                             </div>
@@ -696,7 +707,7 @@
                             <div class="card-header" id="headingTwo2">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
-                                        How are you different from your competitors?
+                                        How do I get started?
                                     </button>
                                 </h5>
                             </div>
@@ -1049,23 +1060,10 @@
                     <p>Little Blue Door</p>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <img src="images/partners/partner-3.jpg" class="partner d-inline-block" width="100%">
-                    <p>Babysitters Of</p>
+                    <img src="images/partners/partner-9.jpg" class="partner d-inline-block" width="100%">
+                    <p>Airtots</p>
                 </div>
-            </div>
-            <div class="row ">
-                <div class="col-sm-4 text-center">
-                    <img src="images/partners/partner-4.jpg" class="partner d-inline-block" width="100%">
-                    <p>Friends of Friends London</p>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <img src="images/partners/partner-5.jpg" class="partner d-inline-block" width="100%">
-                    <p>Rentuu.com</p>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <img src="images/partners/partner-6.jpg" class="partner d-inline-block" width="100%">
-                    <p>The Plum Guide</p>
-                </div>
+
             </div>
             <div class="row ">
                 <div class="col-sm-4 text-center">
@@ -1076,11 +1074,14 @@
                     <img src="images/partners/partner-8.jpg" class="partner d-inline-block" width="100%">
                     <p>24/7 Airport Transfer</p>
                 </div>
+
+
                 <div class="col-sm-4 text-center">
-                    <img src="images/partners/partner-9.jpg" class="partner d-inline-block" width="100%">
-                    <p>Airtots</p>
+                    <img src="images/partners/partner-6.jpg" class="partner d-inline-block" width="100%">
+                    <p>The Plum Guide</p>
                 </div>
             </div>
+
         </div>
     </section>
 
