@@ -6,6 +6,15 @@ $(document).ready(function () {
 
 /* ---- GALLERY ---- */
 
+$('.multiple-items').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+});
+
+/* ---- OLD GALLERY ---- */
+
 function gallery1() {
     image1 = [];
     for (i = 0; i < g1.length; i++) {
