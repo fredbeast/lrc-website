@@ -368,15 +368,15 @@ p.lead {
 }
 
 
-.book-btn {
+.btn-book {
     color: white !important;
-    background-color: #16b0eb;
+    background-color: #16b0eb !important;
     border-radius: 3px;
     margin: 0 20px;
 }
 
 
-.book-btn:hover {
+.btn-book:hover {
     color: white;
 
 }
