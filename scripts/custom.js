@@ -13,7 +13,7 @@ $('.multiple-items').slick({
     autoplaySpeed: 5000,
 });
 
-/* ---- OLD GALLERY ---- */
+/* ---- OLD GALLERY
 
 function gallery1() {
     image1 = [];
@@ -110,6 +110,7 @@ g2.push(["boroughs/borough-5.jpg", "HIGHBURY<br>& ISLINGTON"]);
 g3.push(["boroughs/borough-3.jpg", "HAMMERSMITH<br>& FULHAM"]);
 g3.push(["boroughs/borough-6.jpg", "CAMDEN"]);
 
+*/
 
 $('li a').click(function (e) {
     $('a').removeClass('active');

@@ -370,20 +370,7 @@ p.lead {
 
 .book-btn {
     color: white !important;
-    background-color: #ff2f2f;
-    border-radius: 3px;
-    margin: 0 20px;
-}
-
-
-.book-btn:hover {
-    color: white;
-
-}
-
-.book-btn {
-    color: white !important;
-    background-color: #ff2f2f;
+    background-color: #16b0eb;
     border-radius: 3px;
     margin: 0 20px;
 }
@@ -769,6 +756,8 @@ hr.tl.tl-r {
     -webkit-box-shadow: 0 0 10px #0005;
     box-shadow: 0 0 10px #0005;
     overflow: hidden;
+    margin: 10px;
+    margin-top: 7px;
 
 }
 
