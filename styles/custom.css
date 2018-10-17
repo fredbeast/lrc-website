@@ -107,7 +107,13 @@ section#story {
 }
 
 
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 758px) {
+
+    h4,
+    h5 {
+        font-size: 0.9em;
+    }
+}
 
 
 p.lead {
@@ -384,7 +390,7 @@ p.lead {
 #navbar {
     -webkit-box-shadow: 0 8px 6px -6px #444;
     box-shadow: 0 0 4px #777;
-    z-index: 999;
+    z-index: 1000;
 }
 
 .navbar-nav {
@@ -663,7 +669,7 @@ hr.tl.tl-r {
 */
 .carousel-control-prev,
 .carousel-control-next {
-    z-index: 1000;
+    z-index: 999;
 
 }
 
