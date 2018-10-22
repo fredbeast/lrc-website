@@ -754,33 +754,41 @@ hr.tl.tl-r {
     }
 }
 
+.btn-value,
+btn-book {
+    border: solid 2px #fff;
+}
+
+.btn a {
+    text-decoration: none !important;
+    font-weight: 500 !important;
+    color: #fff !important;
+
+}
 
 .btn-value {
     background-color: #bf9000;
-    position: relative;
-    border: solid 5px #fff;
     -webkit-box-shadow: 0 0 10px #0005;
     box-shadow: 0 0 10px #0005;
     overflow: hidden;
+
+
+}
+
+#apply .btn-value {
+    position: relative;
     margin: 10px;
     margin-top: 7px;
-
 }
 
-.btn-value a {
-    color: #fff !important;
-    text-decoration: none !important;
-    font-weight: 500 !important;
 
-}
 
-.btn-value:after {
+#apply .btn-value:after {
     width: 100%;
     height: 0;
     top: 50%;
     left: 50%;
     background: #fff;
-    opacity: 0;
     -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
     -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
     transform: translateX(-50%) translateY(-50%) rotate(45deg);
@@ -798,7 +806,7 @@ hr.tl.tl-r {
 
 
 .btn-navy {
-    background-color: #2b325d;
+    background-color: #16b0eb;
     position: relative !important;
     border: solid 5px #fff;
     -webkit-box-shadow: 0 0 10px #0005;
@@ -807,18 +815,12 @@ hr.tl.tl-r {
 
 }
 
-.btn-navy a {
-    color: #fff !important;
-    text-decoration: none !important;
-    font-weight: 500 !important;
-
-}
 
 
 .btn-brochure {
     position: absolute;
     width: 200px;
-    left: calc(50%-100px);
+    left: calc(50% - 100px);
     top: 50%;
 }
 
@@ -833,6 +835,15 @@ hr.tl.tl-r {
 .btn-value:active:after {
     height: 400%;
     opacity: 1;
+}
+
+#test-carousel {
+    overflow: auto;
+    min-height: 300px;
+}
+
+#test-carousel p {
+    margin-top: 70px;
 }
 
 .map {
