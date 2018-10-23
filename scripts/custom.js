@@ -11,7 +11,25 @@ $('.multiple-items').slick({
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
+    responsive: [
+        {
+            breakpoint: 980, // tablet breakpoint
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 480, // mobile breakpoint
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
 });
+
+
 
 /* ---- OLD GALLERY
 
