@@ -840,13 +840,81 @@ btn-book {
     opacity: 1;
 }
 
-#test-carousel {
-    overflow: auto;
+#test-carousel .carousel-item {
+    overflow: visible;
     min-height: 300px;
+    height: auto;
 }
 
-#test-carousel p {
-    margin-top: 70px;
+
+.wrapper {
+    position: absolute;
+    transform: translateY(-50%);
+    bottom: 0;
+    top: 50%;
+}
+
+.splodge {
+    opacity: 0.7;
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: calc(50% - 75px);
+    left: calc(50% - 20px)
+}
+
+@media screen and (max-width: 412px) {
+    #test-carousel .carousel-item {
+        min-height: 500px;
+    }
+
+
+
+    .splodge {
+        width: 40%;
+    }
+
+    .splodge-1 {
+        top: calc(50% - 70px);
+        left: calc(50% - 100px)
+    }
+
+    .splodge-2 {
+        top: calc(50% - 90px);
+        left: calc(50% - 60px)
+    }
+}
+
+@media screen and (min-width: 413px) and (max-width: 700px) {
+    .splodge {
+        width: 30%;
+    }
+
+    .splodge-1 {
+        top: calc(50% - 100px);
+        left: calc(50% - 150)
+    }
+
+    .splodge-2 {
+        top: calc(50% - 10px);
+        left: calc(50% - 30px)
+    }
+}
+
+@media screen and (min-width: 701px) {
+    .splodge {
+        width: 20%;
+    }
+
+    .splodge-1 {
+        top: calc(50% - 100px);
+        left: calc(50% + 50px)
+    }
+
+    .splodge-2 {
+        top: calc(50% - 100px);
+        left: calc(50% - 300px)
+    }
 }
 
 .map {
