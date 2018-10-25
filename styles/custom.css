@@ -43,7 +43,6 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    speak: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -52,6 +51,12 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+
+@-moz-document url-prefix() {
+    body {
+        font-weight: lighter !important;
+    }
+}
 
 h1,
 h2,
@@ -833,6 +838,9 @@ btn-book {
     height: auto;
 }
 
+.slick-arrow {
+    display: none !important;
+}
 
 .wrapper {
     position: absolute;
