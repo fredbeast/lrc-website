@@ -585,72 +585,11 @@ hr.tl.tl-r {
     text-decoration: none;
 }
 
-.gallery {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    max-width: 100%;
-    cursor: pointer;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    height: 200px;
-    background-color: lightgrey;
-    text-align: center;
-
-}
 
 
-#g-1 {
-    min-height: 650px;
-    background-image: url('../images/boroughs/borough-1.jpg');
-    margin-bottom: 30px;
-}
 
-#g-2 {
-    min-height: 500px;
-    margin-bottom: 30px;
-    background-image: url('../images/boroughs/borough-2.jpg');
-}
 
-#g-3 {
-    min-height: 400px;
-    background-image: url('../images/boroughs/borough-3.jpg');
-}
 
-.btn-gallery {
-    background-image: url(../images/skyline-test.png);
-    background-size: contain;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    color: #2b325d;
-    border-radius: 0;
-    border: 0;
-    background-color: white;
-    padding: 20px;
-    font-weight: 500;
-    -webkit-box-shadow: 0 0 10px #0005;
-    box-shadow: 0 0 10px #0005;
-}
-
-.btn-gallery:hover {
-    color: #fff;
-    background-color: #2b325d;
-}
-
-.btn-gallery:active,
-.btn-gallery:focus {
-    -webkit-box-shadow: 0 0 10px #0005 !important;
-    box-shadow: 0 0 10px #0005 !important;
-    border: 0 !important;
-}
 
 /*
 .carousel-control-next-icon,
@@ -677,10 +616,7 @@ hr.tl.tl-r {
 }
 
 
-#gallery-carousel hr {
-    margin-top: 0.6rem;
-    margin-bottom: 0.9rem;
-}
+
 
 .carousel-thumbnails .carousel-indicators img {
     max-width: 100px;
@@ -733,7 +669,6 @@ hr.tl.tl-r {
     min-height: 600px;
     min-width: 400px;
 }
-
 
 
 #houses-drawing {
