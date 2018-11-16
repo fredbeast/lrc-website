@@ -13,7 +13,6 @@
     <meta name="author" content="Fred Parry">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-
     <script>
         if(window.location.protocol != 'https:') {
   location.href =   location.href.replace("http://", "https://");
@@ -31,7 +30,7 @@
             a.async = 1;
             a.src = g;
             m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-65301096-1', 'auto');
         ga('send', 'pageview');
@@ -165,7 +164,7 @@
 
     <!-- TRIO -->
 
-    <section style="padding-bottom:20px">
+    <section class="section-padding" style="padding-bottom:20px">
         <div class="container-fluid">
             <div class="row">
                 <div id="slogan" class="col-12 text-center" style="overflow: hidden;">
@@ -184,7 +183,7 @@
         </div>
     </section>
 
-    <section style="padding-bottom:0">
+    <section class="section-padding" style="padding-bottom:0">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center wow fadeIn">
@@ -209,7 +208,7 @@
 
     <!-- BROCHURE -->
 
-    <section>
+    <section class="section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 offset-md-3 text-center wow fadeIn" data-wow-delay="0.5s">
@@ -223,7 +222,7 @@
 
     <!-- APPLY -->
 
-    <section id="apply">
+    <section class="section-padding" id="apply">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
@@ -239,47 +238,8 @@
             </div>
         </div>
     </section>
-    <!-- STORY <section id="story">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12">
-                                    <hr class="tl tl-t">
-                                    <h2 class="title">Our Story</h2>
-                                    <hr class="tl tl-b">
-                                </div>
-                            </div>
-                        </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="row ">
-                <div class="col-sm-12 col-md-7">
-                    <p class="lead text-story wow fadeIn">
-                        In 2013 we (Tom and Will) left our corporate jobs with the intentions of becoming full-time entrepreneurs. We brainstormed a number of ideas and even tried a few out. In the end, we decided to head back to our roots in the Berkshire countryside and set up an apple juicing operation in an effort to prove money does actually grow on trees… the business was a formative experience, full of highs and lows but we felt like its potential was limited.
-                        <br>
-                        <br> We turned our gaze to the London property market - we met with agents, developers, industry experts, contractors and potential clients. From our research, it was clear that property management and specifically short let management was a nascent market brimming with opportunity. We set out with one simple task: to create the best short let management company in London. Three years later that is still our aim and we believe we’re not far off achieving that goal. We’re constantly innovating and seeking improvement and we will never rest on our laurels.
-                    </p>
-                    <img src="images/signature.png" width="250px" style="padding:20px; opacity: 0.7">
-                </div>
-                <div class="col-md-5 d-none d-md-block">
-                    <div class="row ">
-                        <div class="col-12">
-                            <img class="circles mx-auto d-block wow fadeIn" data-wow-delay="0.8s" src="images/Circle-tom.png">
-                        </div>
-                    </div>
-                    <div class="row ">
-                        <div class="col-12">
-                            <img class="circles mx-auto d-block wow fadeIn" data-wow-delay="0.8s" src="images/Circle-will.png">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
-    <!-- SERVICE -->
 
-    <section id="service">
+    <section class="section-padding" id="service">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -291,7 +251,7 @@
         </div>
     </section>
 
-    <section class="service">
+    <section class="section-padding" class="service">
         <div class="container">
             <div class="row wow fadeIn">
                 <div class="col-md-6">
@@ -428,7 +388,7 @@
 
     <!-- FAQs -->
 
-    <section id="faqs">
+    <section class="section-padding" id="faqs">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -440,7 +400,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
@@ -782,7 +742,7 @@
 
     <!-- GALLERY -->
 
-    <section>
+    <section class="section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -794,7 +754,7 @@
         </div>
     </section>
 
-    <section style="padding-top: 0;">
+    <section class="section-padding" style="padding-top: 0;">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -817,12 +777,38 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div id="search-widget_IO312PWQ">
+                    <script>
+                        ! function(e, t, a, n, c, r) {
+            function s(t) {
+                e.console.log("[Guesty Embedded Widget]:", t)
+            }
+            var i, d, l, o, y, m, g, h, p, u;
+            n && (i = n, d = t.getElementsByTagName("head")[0], (l = t.createElement("link")).rel = "stylesheet", l.type = "text/css", l.href = i, l.media = "all", d.appendChild(l)), o = function() {
+                try {
+                    e[a].create(r).catch(function(e) {
+                        s(e.message)
+                    })
+                } catch (e) {
+                    s(e.message)
+                }
+            }, h = !1, y = c, m = function() {
+                h || this.readyState && "complete" != this.readyState || (h = !0, o())
+            }, (g = t.createElement("script")).type = "text/javascript", g.src = y, g.async = "true", g.onload = g.onreadystatechange = m, p = g, (u = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, u)
+        }(window, document, "GuestySearchBarWidget", "https://s3.amazonaws.com/guesty-frontend-production/search-bar-production.css", "https://s3.amazonaws.com/guesty-frontend-production/search-bar-production.js", {
+            "siteUrl": "thelondonresidentsclub.guestybookings.com"
+        });
+    </script>
+                </div>
+
+            </div>
         </div>
     </section>
 
     <!-- TESTIMONIALS -->
 
-    <section id="test">
+    <section class="section-padding" id="test">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -834,7 +820,7 @@
         </div>
     </section>
 
-    <section style="padding:0;">
+    <section class="section-padding" style="padding:0;">
         <div class="container-fluid">
             <div id="test-carousel" class="carousel slide carousel-fade" data-ride="carousel">
                 <div class="carousel-inner">
@@ -923,7 +909,7 @@
 
     <!-- CONTACT -->
 
-    <section id="contact">
+    <section class="section-padding" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -935,7 +921,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="section-padding">
         <div class="container">
 
             <div class="row">
@@ -971,7 +957,7 @@
         </div>
     </section> <!-- MAP -->
 
-    <section>
+    <section class="section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -984,7 +970,7 @@
 
     <!-- PARTNERS -->
 
-    <section id="partners">
+    <section class="section-padding" id="partners">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -996,7 +982,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="section-padding">
         <div class="container">
             <div class="row ">
                 <div class="col-sm-4 text-center">
@@ -1033,7 +1019,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-12">
