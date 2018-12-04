@@ -1,0 +1,124 @@
+.ll-skin-nigran {
+    font-size: 90%;
+}
+
+.ll-skin-nigran .ui-widget {
+    font-family: "Helvetica Neue", "Trebuchet MS", Tahoma, Verdana, Arial, sans-serif;
+    background: #fff;
+    border: 1px solid #2b325d;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    box-shadow: 0 0px 0px;
+
+}
+
+.ll-skin-nigran .ui-datepicker {
+    padding: 0;
+}
+
+.ll-skin-nigran .ui-datepicker-today a {
+    font-weight: 700 !important;
+    color: #16b0eb !important;
+}
+
+.ll-skin-nigran .ui-datepicker-header {
+    border: none;
+    color: #2b325d;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    font-weight: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.ll-skin-nigran .ui-datepicker-header .ui-state-hover {
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+
+.ll-skin-nigran .ui-datepicker .ui-datepicker-title {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+.ll-skin-nigran .ui-datepicker .ui-datepicker-prev-hover,
+.ll-skin-nigran .ui-datepicker .ui-datepicker-next-hover,
+.ll-skin-nigran .ui-datepicker .ui-datepicker-next,
+.ll-skin-nigran .ui-datepicker .ui-datepicker-prev {
+    top: 1.7em;
+    border: none;
+}
+
+.ll-skin-nigran .ui-datepicker .ui-datepicker-prev-hover {
+    left: 2px;
+}
+
+.ll-skin-nigran .ui-datepicker .ui-datepicker-next-hover {
+    right: 2px;
+}
+
+.ll-skin-nigran .ui-datepicker .ui-datepicker-next span,
+.ll-skin-nigran .ui-datepicker .ui-datepicker-prev span {
+    background-image: url(images/ui-icons_222222_256x240.png);
+    background-position: -32px -32px;
+    margin-top: 0;
+    top: 0;
+    font-weight: normal;
+}
+
+.ll-skin-nigran .ui-datepicker .ui-datepicker-prev span {
+    background-position: -96px -32px;
+}
+
+.ll-skin-nigran .ui-datepicker .ui-datepicker-prev-hover span {
+    background-position: -96px -48px;
+}
+
+.ll-skin-nigran .ui-datepicker .ui-datepicker-next-hover span {
+    background-position: -32px -48px;
+}
+
+.ll-skin-nigran .ui-datepicker table {
+    margin: 0;
+}
+
+.ll-skin-nigran .ui-datepicker th {
+    padding: 3em 0;
+    color: #2b325d;
+    font-size: 8px;
+    font-weight: normal;
+    text-transform: uppercase;
+    border: none;
+}
+
+.ll-skin-nigran .ui-datepicker td {
+    border: none;
+    padding: 0;
+}
+
+.ll-skin-nigran td .ui-state-default {
+    background: #f7f7f7;
+    border: none;
+    text-align: center;
+    padding: 1em 0;
+    margin: 0;
+    font-weight: normal;
+    color: #bf9000;
+    font-size: 12px;
+}
+
+
+.ll-skin-nigran td .ui-state-hover {
+    background: #5b6380;
+    color: #ffffff;
+}
+
+.ll-skin-nigran td .ui-state-active {
+    background: #2b325d;
+
+}
