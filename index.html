@@ -12,12 +12,10 @@
     <meta name="keywords" content=" holiday rentals, holiday lets, Holiday Letting,  letting management, ​Increase rent, higher rental yields london, rent increase, short term letting agent, Airbnb agent, Flexible property, Airbnb Check in, Airbnb guest screening, London letting agent, Chelsea letting, West London, Short term lets, Short lets, Kensington, Kensington lets, Airbnb Chelsea, Knightsbridge letting, Fulham letting, Property agent, help with Airbnb, Airbnb assistance, Chelsea short term let, Kings Road letting London, Fulham property, Chelsea property, Prime London property, The London Residents Club, LRC">
     <meta name="author" content="Fred Parry">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
     <script>
         if(window.location.protocol != 'https:') {
   location.href =   location.href.replace("http://", "https://");
 }    </script>
-
     <!-- Facebook Pixel Code -->
     <script>
         !function(f,b,e,v,n,t,s)
@@ -788,13 +786,10 @@ fbq('track', 'PageView');
                 <div class="col-12">
                     <p>Book to stay in one of our wonderful homes</p>
 
-                    <div class="alert alert-warning" id="dateerror">
-                    </div>
 
-
-                    <form onSubmit="return process();">
+                    <form id="guestyform" onSubmit="return process();">
                         <div class="form-row">
-                            <div class="form-group col-md-3 col-6">
+                            <div class="form-group col-md-3 col-6 offset-md-1">
                                 <label for="guests" class="col-form-label">Check In</label>
                                 <input type="text" id="startdate" value="" readonly="true" placeholder="Select Date" name="startDate" style="width:100%; padding:5px">
 
@@ -829,10 +824,10 @@ fbq('track', 'PageView');
                                 </select>
                             </div>
 
-                            <div class="form-group col-md-4 col-6">
+                            <div class="form-group col-md-2 col-6">
                                 <label for="guests" class="col-form-label invisible">hidden</label>
 
-                                <button name="submit" type="submit" id="submit" class="btn btn-primary col-12">Search</button>
+                                <button name="submit" type="submit" id="submit" class="btn col-12">SEARCH</button>
                             </div>
                         </div>
 

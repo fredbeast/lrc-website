@@ -2,6 +2,26 @@
     font-size: 90%;
 }
 
+#ui-datepicker-div {
+    margin-top: 5px !important;
+    border: 1px solid #ced4da
+}
+
+.ui-state-selected a {
+    background: #d4a61c !important;
+    color: #ffffff !important
+}
+
+.ui-state-range a {
+    background: #bf9000 !important;
+    color: #6d5b22 !important
+}
+
+
+.ui-state-disabled {
+    opacity: 0.25 !important;
+}
+
 .ll-skin-nigran .ui-widget {
     font-family: "Helvetica Neue", "Trebuchet MS", Tahoma, Verdana, Arial, sans-serif;
     background: #fff;
@@ -19,12 +39,12 @@
 
 .ll-skin-nigran .ui-datepicker-today a {
     font-weight: 700 !important;
-    color: #16b0eb !important;
+    color: #2b325d !important;
 }
 
 .ll-skin-nigran .ui-datepicker-header {
     border: none;
-    color: #2b325d;
+    color: #c7c7c7;
     border-bottom: 1px solid #fff;
     background: transparent;
     font-weight: normal;
@@ -114,11 +134,11 @@
 
 
 .ll-skin-nigran td .ui-state-hover {
-    background: #5b6380;
+    background: #d4a61c;
     color: #ffffff;
 }
 
 .ll-skin-nigran td .ui-state-active {
-    background: #2b325d;
+    background: #d4a61c;
 
 }

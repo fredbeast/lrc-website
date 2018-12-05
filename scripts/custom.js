@@ -1,48 +1,72 @@
 /* Date Picker */
 
-$("#dateerror").hide();
 
-$(function () {
+$(document).ready(function () {
 
-    $("#startdate").datepicker({
-        defaultDate: "+1w",
+    var dateFormat = "dd/mm/yy",
+        start = $("#startdate").datepicker({
+            defaultDate: new Date(),
+            dateFormat: "dd/mm/yy",
+            firstDay: 1,
+            showButtonPanel: false,
+            showOtherMonths: true,
+            selectOtherMonths: true,
+            minDate: new Date(),
+            beforeShowDay: highlightDays
+        }).on("change", function () {
+            end.datepicker("option", "minDate", getDate(this));
+        }),
 
-        dateFormat: "d M",
-        numberOfMonths: 1,
-        firstDay: 1,
-        showButtonPanel: false,
-        minDate: new Date()
-    }).datepicker('widget').wrap('<div class="ll-skin-nigran"/>');
+        end = $("#enddate").datepicker({
+            defaultDate: new Date(),
+            dateFormat: "dd/mm/yy",
+            firstDay: 1,
+            showButtonPanel: false,
+            showOtherMonths: true,
+            selectOtherMonths: true,
+            minDate: new Date(),
+            beforeShowDay: highlightDays
+        }).on("change", function () {
+            start.datepicker("option", "maxDate", getDate(this));
+        });
 
-    $("#enddate").datepicker({
-        defaultDate: "+1w",
-        dateFormat: "d M",
-        numberOfMonths: 1,
-        firstDay: 1,
-        showButtonPanel: false,
-        minDate: new Date()
-    }).datepicker('widget').wrap('<div class="ll-skin-nigran"/>');
+    $("#enddate").datepicker("widget").wrap('<div class="ll-skin-nigran"/>');
 
+    function highlightDays(date) {
+        if (start.datepicker("getDate") != null) {
+            if (start.datepicker("option", "maxDate") != null && end.datepicker("option", "minDate") != null && date != null) {
+                if (date.valueOf() == start.datepicker("option", "maxDate").valueOf() || date.valueOf() == end.datepicker("option", "minDate").valueOf()) {
+                    console.log("END OF THE LINE, BITCH - " + date)
+                    return [true, 'ui-state-selected'];
+                }
+            }
 
-    $("#startdate").datepicker("option", {
-        onSelect: function () {
-            $("#enddate").datepicker("option", "minDate", $("#startdate").datepicker("getDate"));
-        },
-    });
+            if (date > start.datepicker("getDate") && date < end.datepicker("getDate")) {
+                console.log("PAINTED, BITCH - " + date)
+                return [true, 'ui-state-range'];
+            }
+        }
+        return [true, ''];
 
-    $("#enddate").datepicker("option", {
-        onSelect: function () {
-            $("#startdate").datepicker("option", "maxDate", $("#enddate").datepicker("getDate"));
-        },
-    });
+    }
 
+    function getDate(element) {
+        var date;
+        try {
+            date = $.datepicker.parseDate(dateFormat, element.value);
+        } catch (error) {
+            date = null;
+        }
+        return date;
+    }
 });
 
 /* Booking Form Submit */
 
 function process() {
-    var root = "https://thelondonresidentsclub.guestybookings.com/listings?";
-    var params = {};
+    var params = {
+        city: "London"
+    };
     var formGuest = $("#guests").val();
     var formStart = $.datepicker.formatDate("yy-mm-dd", $("#startdate").datepicker("getDate"));
     var formEnd = $.datepicker.formatDate("yy-mm-dd", $("#enddate").datepicker("getDate"));
@@ -76,7 +100,7 @@ $(document).ready(function () {
     $(".loader-wrapper").delay(1800).fadeOut(600)
 });
 
-/* ---- GALLERY ---- */
+/* ---- SLICK GALLERY ---- */
 
 $(".multiple-items").slick({
     slidesToShow: 3,

@@ -780,6 +780,33 @@ btn-book {
     display: none !important;
 }
 
+
+#startdate,
+#enddate,
+#guests,
+#submit {
+    border: 1px solid #ced4da;
+    border-radius: 0;
+}
+
+#submit {
+    color: white !important;
+    background-color: #16b0eb !important;
+    border: 0;
+}
+
+#submit:hover {
+    background-color: #1890bd !important;
+
+}
+
+#guestyform {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
 .wrapper {
     position: absolute;
     transform: translateY(-50%);
