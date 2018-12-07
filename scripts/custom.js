@@ -36,13 +36,11 @@ $(document).ready(function () {
         if (start.datepicker("getDate") != null) {
             if (start.datepicker("option", "maxDate") != null && end.datepicker("option", "minDate") != null && date != null) {
                 if (date.valueOf() == start.datepicker("option", "maxDate").valueOf() || date.valueOf() == end.datepicker("option", "minDate").valueOf()) {
-                    console.log("END OF THE LINE, BITCH - " + date)
                     return [true, 'ui-state-selected'];
                 }
             }
 
             if (date > start.datepicker("getDate") && date < end.datepicker("getDate")) {
-                console.log("PAINTED, BITCH - " + date)
                 return [true, 'ui-state-range'];
             }
         }
@@ -128,8 +126,8 @@ $(".multiple-items").slick({
 
 
 
-$("li a").click(function (e) {
-    $("a").removeClass("active");
+$(".navbar-nav li a").click(function (e) {
+    $(".navbar-nav li a").removeClass("active");
     $(this).addClass("active");
 });
 
