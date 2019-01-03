@@ -62,9 +62,7 @@ $(document).ready(function () {
 /* Booking Form Submit */
 
 function process() {
-    var params = {
-        city: "London"
-    };
+    var params = {};
     var formGuest = $("#guests").val();
     var formStart = $.datepicker.formatDate("yy-mm-dd", $("#startdate").datepicker("getDate"));
     var formEnd = $.datepicker.formatDate("yy-mm-dd", $("#enddate").datepicker("getDate"));
