@@ -81,7 +81,8 @@ h1 {
 }
 
 li,
-button {
+button,
+a {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -700,11 +701,22 @@ btn-book {
 }
 
 .btn-value {
-    background-color: #bf9000;
+    background-color: #bf9000 !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
     -webkit-box-shadow: 0 0 10px #0005;
     box-shadow: 0 0 10px #0005;
     overflow: hidden;
 
+}
+
+.btn-value:hover {
+    background-color: #ffffff !important;
+    color: #bf9000 !important;
+    border-color: #bf9000 !important;
+    -webkit-box-shadow: 0 0 10px #0005;
+    box-shadow: 0 0 10px #0005;
+    overflow: hidden;
 
 }
 
