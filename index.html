@@ -10,8 +10,8 @@
     <meta name="keywords" content=" holiday rentals, holiday lets, Holiday Letting,  letting management, ​Increase rent, higher rental yields london, rent increase, short term letting agent, Airbnb agent, Flexible property, Airbnb Check in, Airbnb guest screening, London letting agent, Chelsea letting, West London, Short term lets, Short lets, Kensington, Kensington lets, Airbnb Chelsea, Knightsbridge letting, Fulham letting, Property agent, help with Airbnb, Airbnb assistance, Chelsea short term let, Kings Road letting London, Fulham property, Chelsea property, Prime London property, The London Residents Club, LRC">
     <meta name="author" content="Fred Parry">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<script>
-    if (window.location.protocol != 'https:') {
+    <script>
+        if (window.location.protocol != 'https:') {
         location.href = location.href.replace("http://", "https://");
     }
 </script>
@@ -79,6 +79,9 @@ fbq('track', 'PageView');
     <!-- Favicons -->
     <link rel="shortcut icon" href="images/favicon.ico">
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
+
     <!-- Boostrap -->
     <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
 
@@ -114,10 +117,46 @@ fbq('track', 'PageView');
         <div class="loader"></div>
 
     </div>
-<!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script>
-window.fbAsyncInit = function() {
+
+    <div class="modal" id="altidoModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" id="altidoDismiss">&times;</button>
+                </div>
+                <img src="./images/logo-altido.JPG" class="w-100 py-1 px-3">
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p>
+                        We have an announcement!
+                    </p>
+                    <p>
+                        As you will know yourself, the travel industry is changing, with options for guests and property owners expanding all the time. This has led to an exciting new step for LRC.
+                    </p>
+                    <p>
+                        We have decided to merge the four best and fastest growing short-let companies across Europe. We have come together because we believe that we will be stronger, with the ability to connect and learn from each other whilst creating a global brand that clients and guests alike can trust.
+                    </p>
+                    <p>
+                        With 65 years combined experience, we will enable a vast range of clients and properties to be part of the wildly successful tourism hub of Europe, and together we have formed an interconnected hospitality group reaching guests globally.
+                    </p>
+                    <p>
+                        Check out the <a href="https://stayaltido.com" target="_blank">Altido website</a> and our new destinations.
+                    </p>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
   FB.init({
     xfbml            : true,
     version          : 'v3.2'
@@ -132,19 +171,13 @@ window.fbAsyncInit = function() {
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<!-- Your customer chat code -->
-<div class="fb-customerchat"
-  attribution=install_email
-  page_id="238722566522329"
-  theme_color="#232d5e"
-  logged_in_greeting="Hi there, how can I help?"
-  logged_out_greeting="Hi there, how can I help?">
-</div>
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=install_email page_id="238722566522329" theme_color="#232d5e" logged_in_greeting="Hi there, how can I help?" logged_out_greeting="Hi there, how can I help?">
+    </div>
 
     <nav id="navbar" class=" navbar fixed-top navbar-expand-md navbar-light bg-white">
         <a class="navbar-brand" href="#hero">
-            <img src="images/logo.svg" width="45" height="45" class="d-inline-block" id="logo" alt="">
-            <span>L R C </span>
+            <img src="images/lrc-logo.png" width="172" height="35" class="d-inline-block" id="logo" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapseButton" aria-controls="navbarCollapseButton" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

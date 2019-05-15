@@ -90,11 +90,6 @@ $(document).ready(function () {
     $(".loader-wrapper").delay(1800).fadeOut(600)
 });
 
-$(document).ready(function () {
-    $(".circle").addClass("huge");
-    $(".circle-2").addClass("huge-2");
-    $(".loader-wrapper").delay(1800).fadeOut(600)
-});
 
 /* ---- SLICK GALLERY ---- */
 
@@ -184,4 +179,14 @@ $("#trioService").on("click", function (event) {
 
 $(document).ready(function () {
     $("body").addClass("loaded");
+});
+
+
+$(document).ready(function () {
+    if (localStorage.getItem('popState') != 'shown') {
+        $("#altidoModal").delay(5000).modal('show');
+    }
+    $("#altidoDismiss").click(function () {
+        localStorage.setItem('popState', 'shown')
+    })
 });
